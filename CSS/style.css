@@ -54,7 +54,7 @@ h6 {
 
 .main,
 .admin {
-  height: 290px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,8 +90,4 @@ h6 {
   border-left-style: solid;
   border-left-color: aqua;
   border-left-width: 2px; 
-}
-
-.categories {
-  height: 580px;
 }
