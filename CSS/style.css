@@ -15,7 +15,7 @@ h6 {
   color: #7c8799;
   margin: 0 0 5px 25px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 9px;      
+  font-size: 10px;      
 }
 
 .profile,
@@ -90,4 +90,46 @@ h6 {
   border-left-color: aqua;
   border-left-width: 2px;
   cursor: pointer; 
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-div:hover {
+  cursor: pointer;
+}
+
+.categ-h6 {
+  margin-top: 25px;
+}
+
+.checkbox-p {
+ margin: 12px 0;
+ color: #747f91;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 10px;
+}
+
+.icon-blank {
+  margin-left: 20px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.yellow {
+  color: #f6d508;
+}
+
+.blue {
+  color: #2bb1f6;
+}
+
+.red {
+  color: #e7195f
+}
+
+.green {
+  color: #00aa88
 }
