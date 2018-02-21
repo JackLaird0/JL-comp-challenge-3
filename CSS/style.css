@@ -79,7 +79,6 @@ h6 {
 .nav-div:hover .nav-p,
 .nav-div:hover .icon {
   color: white;
-  cursor: pointer;
 }
 
 .nav-div{
@@ -89,5 +88,6 @@ h6 {
   background-color: #2b3341da;
   border-left-style: solid;
   border-left-color: aqua;
-  border-left-width: 2px; 
+  border-left-width: 2px;
+  cursor: pointer; 
 }
