@@ -8,14 +8,86 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #364051;
 }
 
-p {
-  color: white;
+h6 {
+  color: #7c8799;
+  margin: 0 0 5px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;      
 }
 
-h6 {
+.profile,
+.main,
+.admin {
+  border-bottom-style: solid;
+  border-bottom-color: #313a4b;
+  border-bottom-width: 3px;
+}
+
+ .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 100%;
+}
+
+.name-p {
+  color: #747f91;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.icon-angle-down {
+  transition: 0.5s;
+}
+
+.profile-photo {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.main,
+.admin {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 15px;
+  margin-left: 20px;
+  color: #747f91;
+  transition: 0.5s;
+}
+
+.nav-p {
+  margin: 12px 0;
+  font-size: 10px;
+  color: #747f91;
+  transition: 0.5s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-div:hover .nav-p,
+.nav-div:hover .icon {
   color: white;
+  cursor: pointer;
+}
+
+.nav-div{
+  transition: 0.5s;
+}
+.nav-div:hover {
+  background-color: #2b3341da;
+  border-left-style: solid;
+  border-left-color: aqua;
+  border-left-width: 2px; 
 }
