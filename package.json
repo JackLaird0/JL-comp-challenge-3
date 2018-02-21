@@ -1,0 +1,20 @@
+{
+  "name": "static-comp-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files *.css *.html --directory --port 7777"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackLaird0/JL-comp-challenge-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackLaird0/JL-comp-challenge-3/issues"
+  },
+  "homepage": "https://github.com/JackLaird0/JL-comp-challenge-3#readme"
+}
