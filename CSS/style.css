@@ -2,11 +2,9 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 200px 1fr;
-  /* grid-template-rows: 1370px; */
 }
 
 header {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   background-color: #364051;
