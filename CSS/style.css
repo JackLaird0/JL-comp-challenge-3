@@ -2,7 +2,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 200px 1fr;
-  grid-template-rows: 1370px;
+  /* grid-template-rows: 1370px; */
 }
 
 header {
@@ -11,14 +11,14 @@ header {
   flex-direction: column;
   background-color: #364051;
   min-height: 100%;
-  /* height: 100%; */
+  height: 100%;
 }
 
 h6 {
   color: #7c8799;
   margin: 0 0 5px 25px;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
-  font-size: 10px;      
+  font-size: 13px;      
 }
 button {
   outline: none;
@@ -76,7 +76,7 @@ button {
 
 .nav-p {
   margin: 12px 0;
-  font-size: 10px;
+  font-size: 15px;
   color: #747f91;
   transition: 0.3s;
   font-family: 'Fira Sans Extra Condensed', sans-serif;
@@ -116,7 +116,7 @@ button {
  margin: 12px 0;
  color: #747f91;
  font-family: 'Fira Sans Extra Condensed', sans-serif;
- font-size: 10px;
+ font-size: 15px;
 }
 
 .icon-blank {
@@ -174,6 +174,7 @@ nav {
   font-size: 18px;
   font-family: 'fontello', 'Fira Sans Extra Condensed', sans-serif;
   padding-left: 10px;
+  border-right: solid 1px #dadadab4
 }
 
 .search::placeholder {
@@ -317,7 +318,7 @@ h3:hover {
 
 .icon-button {
  color: #313a4b;
- transition: 0.5s;
+ transition: 0.3s;
 }
 
 .icon-circle {
@@ -339,11 +340,6 @@ h3:hover {
   /* align-items: flex-start; */
 }
 
-/* .donut-charts {
-  display: flex;
-  flex-direction: 
-} */
-
 .totals-button {
   display: flex;
   justify-content: center;
@@ -363,6 +359,7 @@ h3:hover {
   font-family: "Fira Sans Extra Condensed", sans-serif;
   border: solid 1px #c1c1c1;
   margin-top: 18px;
+  font-size: 13px;
 }
 
 .appli-day:hover,
@@ -410,6 +407,7 @@ h3:hover {
   font-family: "Fira Sans Extra Condensed", sans-serif;
   background-color: #ffffff;
   border: solid 1px #c1c1c1;
+  font-size: 13px;
 }
 
 .chart-text {
@@ -506,10 +504,12 @@ table {
   margin-left: 40px;
   border-radius: 5px;
   margin-top: 50px;
+  width: 500px;
 } 
 
 tr {
-  height: 80px;
+  /* height: 80px; */
+  padding: 18px 0;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #5a616b;
@@ -521,15 +521,13 @@ tr td:nth-child(odd) {
 }
 
 tr td:nth-child(even) {
-  width: 667px;
+  width: 400px;
   margin-right: 30px;
 }
 
 .table-title {
   margin-left: 0;
 }
-
-
 
 .table-header{
   background-color: #6f7e95;
@@ -547,17 +545,16 @@ tr td:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width: 75px;
+  height: 32px;
+  width: 60px;
   background-color: #8893a5;
   transition: 0.3s;
-
+  padding: 0 6px 0 0
 }
 
 .table-header-title {
   margin-left: 50px
 }
-
 
 .edit:hover {
   cursor: pointer;
