@@ -8,15 +8,15 @@
   <link rel="stylesheet" href="CSS/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
-  <title>Document</title>
+  <title>Randy - Profile</title>
 </head>
 <body>
-  <header class="left-nav">
-    <article class="profile">
+  <header class="left-nav" role="header">
+    <article class="profile" aria-label="Profile picture and info">
       <img src="./assets/Randy_Marsh_facebook_profile.png" alt="Randy Marsh of South Park Shirtless" class="profile-photo">
       <p class="name-p">Randy Marsh<i class="icon-angle-down"></i></p>
     </article>
-    <article class="main">
+    <article class="main" aria-label="Site navigation">
       <h6>Main</h6>
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-home"></i>HOME</p></figure>
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-briefcase"></i>JOBS</p></figure>
@@ -24,7 +24,7 @@
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-clipboard"></i>TASKS</p></figure>
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-calendar"></i>CALENDAR</p></figure>
     </article>
-    <article class="admin">
+    <article class="admin" aria-label"profile tabs"> 
       <h6>Admin</h6>
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-adult"></i>USERS</p></figure>
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-location"></i>LOCATIONS</p></figure>
@@ -32,7 +32,7 @@
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-book"></i>JOB BOARDS</p></figure>
       <figure class="nav-div"><p class="nav-p"><i class="icon icon-flow-cross"></i>SOCIAL</p></figure>
     </article>
-    <article class="categories">
+    <article class="categories" aria-label="page categories">
       <h6 class="categ-h6">Categories</h6>
      <figure class="checkbox-div"> <p class="checkbox-p"><i class="icon-blank yellow"></i>Administrative</p></figure>
      <figure class="checkbox-div"> <p class="checkbox-p"><i class="icon-blank blue"></i>Design</p></figure>
@@ -42,14 +42,14 @@
   </header>
   <section class="main-content">
     <nav>
-      <div class="top-bar-content hide-header">
+      <div class="top-bar-content hide-header" aria-label="Toggle collapse header button">
         <i class="icon-left-dir"></i><i class="icon-menu"></i> 
       </div>
       <input type="text" class="search" placeholder='&#xe803;   Search for a job, task or resume'> 
-      <div class="top-bar-content">
+      <div class="top-bar-content" aria-label="Add user profile">
         <i class="icon-user-plus"></i>
       </div>
-      <div class="top-bar-content">
+      <div class="top-bar-content" aria-label="View your calendar">
           <i class="icon-calendar-inv"></i>
       </div>
       <div class="top-bar-content">
@@ -63,26 +63,26 @@
           <p class="location"><i class="icon-location"></i>South Park, CO - <span>Preview this post</span></p>
         </figure>
         <figure class="right-buttons">
-          <button class="open-button"><i class="icon-circle"></i>OPEN</button>
-          <button class="circle-button"><i class="icon-button icon-bookmark"></i></button>
-          <button class="circle-button"><i class="icon-button icon-pencil"></i></button>
-          <button class="circle-button"><i class="icon-button icon-clipboard"></i></button>
+          <button class="open-button" aria-label="Open user profile"><i class="icon-circle"></i>OPEN</button>
+          <button class="circle-button" aria-label="Book mark this user profile"><i class="icon-button icon-bookmark"></i></button>
+          <button class="circle-button" aria-label="Edit status on user profile"><i class="icon-button icon-pencil"></i></button>
+          <button class="circle-button" aria-label="Trash user profile"><i class="icon-button icon-clipboard"></i></button>
         </figure>
       </section>
-      <section class="body-tabs">
-        <h3 class="summary">SUMMARY</h3>
-        <h3>APPLICANTS</h3>
-        <h3>JOB BOARD</h3>
-        <h3>INTERVIEWS</h3>
-        <h3>ACTIVITY</h3>
-        <h3>BROADCAST</h3>
-        <h3>NOTIFICATIONS</h3>
+      <section class="body-tabs" aria-label="Hiring lead navigation">
+        <h3 class="summary" aria-label="Summary tab">SUMMARY</h3>
+        <h3aria-label="Applocants tab">APPLICANTS</h3>
+        <h3aria-label="Job Board tab">JOB BOARD</h3>
+        <h3aria-label="Interviews tab">INTERVIEWS</h3>
+        <h3aria-label="Activity tab">ACTIVITY</h3>
+        <h3aria-label="Broadcast tab">BROADCAST</h3>
+        <h3aria-label="Notifications tab">NOTIFICATIONS</h3>
       </section>
     </main>
     <section class="graph-button-section">
       <section class="graphs">
         <article class="graphs-section">
-          <article class="donut-charts">
+          <article class="donut-charts" aria-label="Donut graphs">
           <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#ffffff00"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#dae4e7" stroke-width="3"></circle>
@@ -128,20 +128,20 @@
           </article> 
         </article>
         <article class="bar-div">
-            <img src="./assets/bar-graph-image.png" class="bar-graph">
+            <img src="./assets/bar-graph-image.png" class="bar-graph" alt="Bar graph representing applicants a day">
             <button class="appli-day">APPLICANTS/DAYS</button>
         </article>
   </section>
   </section>
   <section class="collapse">
-    <hr>
-    <div class="icon-container">
+    <hr aria-hidden="true">
+    <div class="icon-container" aria-label="Toggle graph collapse">
       <i class="icon-up-dir"></i>
     </div>
-    <hr>
+    <hr aria-hidden="true">
   </section>
   <section class="table-and-links"> 
-      <table>
+      <table ariab-label="Hiring lead information">
         <tr class="table-header">
           <td class="table-header-title">JOB DESCRIPTION</td>      
           <td class="table-button table-content"><div class="edit"><i class="icon-pencil edit-pencil">EDIT</i></div></td>
@@ -175,11 +175,11 @@
           <td class="table-content">$58,000</td>     
         </tr>
       </table>
-      <aside class="links-urls">
+      <aside class="links-urls" aria-label="Share to social media and resume links section">
           <figure class="social-button facebook"><i class="icon-facebook-squared"></i><p>Post to Facebook</p></figure>
           <figure class="social-button twitter"><i class="icon-twitter"></i><p>Tweet this Job</p></figure>
           <figure class="social-button linkedin"><i class="icon-linkedin-squared"></i><p>Post to Linkedin</p></figure>
-          <article class="links"> 
+          <article class="links" aria-label="Link to job listing"> 
             <i class="icon-globe">Link to this Job</i>
             <p class="link-paragraph">Lorem ipsum dolor sit amet consectetur adipis cing elit. Iteger molis neque eget vestibgend</p>
             <figure class="copy-link">
@@ -187,7 +187,7 @@
               <button class="copy">Copy</button>
             </figure>
           </article>
-          <article class="links"> 
+          <article class="links" aria-label="Embed sharing button"> 
             <i class="icon-iphone-home">Use the Button Widget</i>
             <p class="link-paragraph">This widget embeds the button for sharing the job for submitting a resume on your website</p>
             <figure class="copy-link">
@@ -195,7 +195,7 @@
               <button class="copy">Copy</button>
             </figure>
           </article>
-          <article class="links email-link"> 
+          <article class="links email-link" aria-label="Upload Resume to hiring lead email"> 
             <i class="icon-paper-plane">Upload Resumes by Email</i>
             <p class="link-paragraph">You can automatically upload multiple resumes to this job by emailing the address below</p>
             <figure class="copy-link">
