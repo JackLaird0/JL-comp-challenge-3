@@ -6,13 +6,12 @@
   <link rel="stylesheet" href="CSS/fontello-efce665a/css/fontello.css">
   <link rel="stylesheet" href="CSS/fontello-efce665a/css/fontello-ie7.css">
   <link rel="stylesheet" href="CSS/reset.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
   <link rel="stylesheet" href="CSS/style.css">
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <header class="left-nav">
     <article class="profile">
       <img src="./assets/Randy_Marsh_facebook_profile.png" alt="Randy Marsh of South Park Shirtless" class="profile-photo">
       <p class="name-p">Randy Marsh<i class="icon-angle-down"></i></p>
@@ -43,7 +42,7 @@
   </header>
   <section class="main-content">
     <nav>
-      <div class="top-bar-content">
+      <div class="top-bar-content hide-header">
         <i class="icon-left-dir"></i><i class="icon-menu"></i> 
       </div>
       <input type="text" class="search" placeholder='&#xe803;   Search for a job, task or resume'> 
@@ -87,7 +86,7 @@
           <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#ffffff00"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#dae4e7" stroke-width="3"></circle>
-            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#44babc" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="75"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#44babc" stroke-width="3" stroke-dasharray="85 15" stroke-dashoffset="75" stroke-linecap="round"></circle>
             <g class="chart-text">
               <text x="50%" y="50%" class="chart-number">
                 3,154
@@ -100,7 +99,7 @@
           <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#ffffff00"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#dae4e7" stroke-width="3"></circle>
-            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#16a4f4" stroke-width="3" stroke-dasharray="90 90" stroke-dashoffset="50"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#16a4f4" stroke-width="3" stroke-dasharray="90 90" stroke-dashoffset="50" stroke-linecap="round"></circle>
             <g class="chart-text">
               <text x="50%" y="50%" class="chart-number">
                 1,546
@@ -113,7 +112,7 @@
           <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#ffffff00"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#dae4e7" stroke-width="3"></circle>
-            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a962aa" stroke-width="3" stroke-dasharray="90 75" stroke-dashoffset="65"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#a962aa" stroke-width="3" stroke-dasharray="90 75" stroke-dashoffset="65" stroke-linecap="round"></circle>
             <g class="chart-text">
               <text x="50%" y="50%" class="chart-number">
                 912
@@ -141,43 +140,71 @@
     </div>
     <hr>
   </section>
-  <section class="table-and-links">
-      <section class="lower-content"> 
-        <table>
-          <tr class="table-header">
-            <td class="table-header-title">JOB DESCRIPTION</td>      
-            <td class="table-button table-content"><div class="edit"><i class="icon-pencil edit-pencil">EDIT</i></div></td>
-          </tr>
-          <tr>
-            <td class="table-title">POSITION TITLE</td>      
-            <td class="table-content">Customer Service Representative</td>
-          </tr>
-          <tr>
-            <td class="table-title">EMPLOYMENT TYPE</td>      
-            <td class="table-content">Full-time</td>
-          </tr>
-          <tr>
-            <td class="table-title">EXPERIENCE</td>      
-            <td class="table-content">Mid-level</td>     
-          </tr>
-          <tr>
-            <td class="table-title">STATUS</td>      
-            <td class="table-content">Open</td>     
-          </tr>
-          <tr>
-            <td class="table-title">DESCRIPTION</td>      
-            <td class="table-content">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on various product shizzle; helping the bidness reduce customer service wait times while doing a back hand-spring and eating a ham sandwhich.</td>     
-          </tr>
-          <tr>
-            <td class="table-title">HIRING LEAD</td>      
-            <td class="table-content hiring-content"><img src="./assets/Randy_Marsh_facebook_profile.png" alt="Randy Marsh of South Park Shirtless" class="hiring-photo"> Randy Marsh</td>     
-          </tr>
-          <tr class="salary-row">
-            <td class="table-title">APPROVED SALARY</td>      
-            <td class="table-content">$58,000</td>     
-          </tr>
-        </table>
-      </section>
+  <section class="table-and-links"> 
+      <table>
+        <tr class="table-header">
+          <td class="table-header-title">JOB DESCRIPTION</td>      
+          <td class="table-button table-content"><div class="edit"><i class="icon-pencil edit-pencil">EDIT</i></div></td>
+        </tr>
+        <tr>
+          <td class="table-title">POSITION TITLE</td>      
+          <td class="table-content">Customer Service Representative</td>
+        </tr>
+        <tr>
+          <td class="table-title">EMPLOYMENT TYPE</td>      
+          <td class="table-content">Full-time</td>
+        </tr>
+        <tr>
+          <td class="table-title">EXPERIENCE</td>      
+          <td class="table-content">Mid-level</td>     
+        </tr>
+        <tr>
+          <td class="table-title">STATUS</td>      
+          <td class="table-content">Open</td>     
+        </tr>
+        <tr>
+          <td class="table-title">DESCRIPTION</td>      
+          <td class="table-content">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on various product shizzle; helping the bidness reduce customer service wait times while doing a back hand-spring and eating a ham sandwhich.</td>     
+        </tr>
+        <tr>
+          <td class="table-title">HIRING LEAD</td>      
+          <td class="table-content hiring-content"><img src="./assets/Randy_Marsh_facebook_profile.png" alt="Randy Marsh of South Park Shirtless" class="hiring-photo"> Randy Marsh</td>     
+        </tr>
+        <tr class="salary-row">
+          <td class="table-title">APPROVED SALARY</td>      
+          <td class="table-content">$58,000</td>     
+        </tr>
+      </table>
+      <aside class="links-urls">
+          <figure class="social-button facebook"><i class="icon-facebook-squared"></i><p>Post to Facebook</p></figure>
+          <figure class="social-button twitter"><i class="icon-twitter"></i><p>Tweet this Job</p></figure>
+          <figure class="social-button linkedin"><i class="icon-linkedin-squared"></i><p>Post to Linkedin</p></figure>
+          <article class="links"> 
+            <i class="icon-globe">Link to this Job</i>
+            <p class="link-paragraph">Lorem ipsum dolor sit amet consectetur adipis cing elit. Iteger molis neque eget vestibgend</p>
+            <figure class="copy-link">
+              <p>http://www.loremipsum.dot/sit</p>
+              <button class="copy">Copy</button>
+            </figure>
+          </article>
+          <article class="links"> 
+            <i class="icon-iphone-home">Use the Button Widget</i>
+            <p class="link-paragraph">This widget embeds the button for sharing the job for submitting a resume on your website</p>
+            <figure class="copy-link">
+              <p>http://www.submit-it.dot/sit</p>
+              <button class="copy">Copy</button>
+            </figure>
+          </article>
+          <article class="links email-link"> 
+            <i class="icon-paper-plane">Upload Resumes by Email</i>
+            <p class="link-paragraph">You can automatically upload multiple resumes to this job by emailing the address below</p>
+            <figure class="copy-link">
+              <p>marsh-i-am-lorde@gmail.com</p>
+            </figure>
+          </article>
+      </aside>
   </section>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./script.js" type="text/javascript">  </script>
 </body>
 </html>
